@@ -12,7 +12,7 @@ def test_contact_greeting(contact_factory):
     assert contact.greet() == "Hello, my name is John Doe and I am 30 years old."
 
 def test_contact_underage(contact_factory):
-    contact = contact_factory("Jane Doe", 17)
+    contact = contact_factory("Jane Doe", 20)
     assert contact.age < 18
 
 def test_contact_adult(contact_factory):
